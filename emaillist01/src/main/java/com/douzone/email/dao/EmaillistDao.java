@@ -106,9 +106,9 @@ public class EmaillistDao {
 	
 	private Connection getConnection() throws SQLException{
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("org.mariadb.jdbc.Driver");
 
-			String url = "jdbc:mysql://127.0.0.1:3306/webdb";
+			String url = "jdbc:mysql://127.0.0.1:3307/webdb";
 			 
 			return DriverManager.getConnection(url, "webdb", "webdb");
 
